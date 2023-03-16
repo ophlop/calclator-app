@@ -13,10 +13,12 @@ h3 {
 }
 
 .container {
-    position: relative;
-    width: 25%;
+    position: absolute;
+    width: 300px;
     height: fit-content;
-    margin: 250px auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding-top: 10px;
     padding: 10px 8px 8px;
     background-color: rgb(95, 95, 95);
@@ -30,15 +32,28 @@ h3 {
     display: block;
 }
 
-.calcInput {
-    width: 100%;
+.calcOutput {
     height: 70px;
     margin-bottom: 10px;
-    padding: 0;
-    text-align: right;
-    font-size: 28px;
-    border: 0;
-    border-radius: 2px;
+    grid-column: 1 / -1;
+    background-color: #fff;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.calcOutput .previous-operand {
+    color: rgba(0, 0, 0, .60);
+    font-size: 1.5rem;
+}
+  
+.calcOutput .current-operand {
+    color: #000;
+    font-size: 2.5rem;
 }
 
 .calcInput:disabled {
@@ -57,7 +72,7 @@ button {
 }
 
 button:hover {
-    background: rgb(163, 163, 163);
+    background: rgb(138, 138, 138);
 }
 
 .numbers {
@@ -70,11 +85,10 @@ button:hover {
     margin-bottom: 10px;
     display: inline-flex;
     justify-content: space-between;
-    /* gap: 10px; */
 }
 
 .top-buttons > button {
-    width: 70px;
+    width: 145px;
     height: 50px;
 }
 
