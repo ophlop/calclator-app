@@ -1,0 +1,139 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:darkgrey
+}
+
+h3 {
+    display: flex;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+
+.container {
+    position: relative;
+    width: 25%;
+    height: fit-content;
+    margin: 250px auto;
+    padding-top: 10px;
+    padding: 10px 8px 8px;
+    background-color: rgb(95, 95, 95);
+    border: 0;
+    border-radius: 6px;
+}
+
+.calculatror {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.calcInput {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 10px;
+    padding: 0;
+    text-align: right;
+    font-size: 28px;
+    border: 0;
+    border-radius: 2px;
+}
+
+.calcInput:disabled {
+    background-color: #fff;
+    cursor: text;
+}
+
+button {
+    padding: 0;
+    background: darkgrey;
+    border: 0;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(163, 163, 163);
+}
+
+.numbers {
+    background-color: #fff;
+}
+
+.top-buttons {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 10px;
+    display: inline-flex;
+    justify-content: space-between;
+    /* gap: 10px; */
+}
+
+.top-buttons > button {
+    width: 70px;
+    height: 50px;
+}
+
+.bottom-buttons {
+    width: 100%;
+    height: 230px;
+    display: inline-flex;
+    gap: 2px;
+    margin-bottom: 10px;
+}
+
+.operation-buttons {
+    display: block;
+    width: 20%;
+    height: 230px;
+}
+
+.numbers-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 76%;
+    height: 230px;
+    row-gap: 10px;
+    column-gap: 7px;
+}
+
+.operation-buttons > button {
+    margin-bottom: 10px;
+    background-color: #f77e1b;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.operation-buttons > button:nth-last-child(1) {
+    margin-bottom: 0px;
+}
+
+.numbers-buttons > button,
+.operation-buttons > button {
+    width: 70px;
+    height: 50px;
+}
+
+.operation-buttons > button:hover,
+.equal-buttons > button:hover {
+    background-color: #e96900;
+}
+
+.equal-buttons {
+    width: 100%;
+    height: fit-content;
+}
+
+.equal-buttons > button {
+    width: 100%;
+    height: 50px;
+    background-color: #f77e1b;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
