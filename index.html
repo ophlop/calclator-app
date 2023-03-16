@@ -1,59 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/style/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.6.4/math.js"></script>
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
     <title>Calculator</title>
 </head>
+
 <body>
     <div class="container">
         <h3>Calculator App</h3>
         <div class="calculator emboss">
-            <input
-                type="number"
-                id="calcWindow"
-                class="calcInput"
-                value="0"
-                disabled
-            />
+            <output class="calcOutput">
+                <div data-previous-operand class="previous-operand"></div>
+                <div data-current-operand class="current-operand"></div>
+            </output>
             <div class="buttons">
                 <div class="top-buttons">
-                    <!-- <div> -->
-                        <button>%</button>
-                        <button>CE</button>
-                        <button>C</button>
-                        <button>del</button>
+                    <button data-all-clear>AC</button>
+                    <button data-delete>C</button>
                 </div>
                 <div class="bottom-buttons">
                     <div class="numbers-buttons">
-                        <button class="numbers">7</button>
-                        <button class="numbers">8</button>
-                        <button class="numbers">9</button>
-                        <button class="numbers">4</button>
-                        <button class="numbers">5</button>
-                        <button class="numbers">6</button>
-                        <button class="numbers">1</button>
-                        <button class="numbers">2</button>
-                        <button class="numbers">3</button>
-                        <button class="numbers">00</button>
-                        <button class="numbers">0</button>
-                        <button class="numbers">,</button>
+                        <button class="numbers" data-number>7</button>
+                        <button class="numbers" data-number>8</button>
+                        <button class="numbers" data-number>9</button>
+                        <button class="numbers" data-number>4</button>
+                        <button class="numbers" data-number>5</button>
+                        <button class="numbers" data-number>6</button>
+                        <button class="numbers" data-number>1</button>
+                        <button class="numbers" data-number>2</button>
+                        <button class="numbers" data-number>3</button>
+                        <button class="numbers" data-number>00</button>
+                        <button class="numbers" data-number>0</button>
+                        <button class="numbers" data-number>.</button>
                     </div>
                     <div class="operation-buttons">
-                        <button>/</button>
-                        <button>x</button>
-                        <button>-</button>
-                        <button>+</button>
+                        <button data-operation>/</button>
+                        <button data-operation>x</button>
+                        <button data-operation>-</button>
+                        <button data-operation>+</button>
                     </div>
                 </div>
                 <div class="equal-buttons">
-                    <button>=</button>
+                    <button data-equals>=</button>
                 </div>
             </div>
         </div>
     </div>
     <script src="./src/script/main.js"></script>
 </body>
+
 </html>
